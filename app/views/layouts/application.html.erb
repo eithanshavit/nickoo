@@ -17,13 +17,22 @@
 		</div>
 		
 	</div>
-
+	 <div class="notice">
+    <% if flash[:notice] %>
+			<%= flash[:notice] %>
+		 <br>	
+	<%end%>
+  </div>
+<div id="main">
+ 
 <%= yield %>
+</div>
 
 	<div id="footer">
 		<div id="footwrap">
-			<div id="footer_content">
-				Created by oogiyot
+			<div id="footer_content" >
+			
+				<%= link_to "Created by oogiyot", "http://www.oogiyot.com" ,:class=>"footer_link"%>
 			</div>
 		</div>
 	</div>

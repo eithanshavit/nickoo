@@ -1,0 +1,26 @@
+
+
+<div class="user show">
+  <h2><%= @user.first_name + " " + @user.last_name %></h2>
+
+  <table summary="User detail view">
+    
+    <tr>
+      <th>User Name</th>
+      <td><%= @user.user_name %></td>
+    </tr>
+    <tr>
+      <th>Email</th>
+      <td><%= @user.email %></td>
+    </tr>
+    <tr>
+      <th>Created</th>
+      <td><%= @user.created_at %></td>
+    </tr>
+    <tr>
+      <th>Updated</th>
+      <td><%= @user.updated_at %></td>
+    </tr>
+  </table>
+  <%= link_to("<< Back to List", users_path, :class => 'back-link') %>
+</div>

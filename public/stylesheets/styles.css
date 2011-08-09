@@ -7,6 +7,13 @@ html, body{
 	height:100%;
 }
 
+th{	text-align: left;}
+
+table td, table th
+{
+    padding-right: 10px; /* 'cellpadding' equivalent */
+}
+
 div, p, ul, h2, h3, h4, img, form{padding:0px; margin:0px;}
 
 
@@ -25,9 +32,13 @@ ul{list-style-type:none;}
    height:30px;
 }
 #main {
-	font-size:40px;
-   padding:30px;
+	line-height:25px;
+	font-size:15px;
+	
+   padding:40px;
+    padding-top:20px;
    padding-bottom:60px;   /* Height of the footer */
+   
 }
 #footer {
 	
@@ -79,4 +90,40 @@ ul{list-style-type:none;}
 	padding-left: 10px;
 
 }
+
+
+
+.notice {
+	
+	padding-top:10px;
+	font-size:19px;
+	color: #d9e23c;
+	text-align: center;
+}
+
+a:link, a:visited {
+color: #d9e23c;
+ text-decoration: none;
+}
+
+a.footer_link:link, a.footer_link:visited {
+color: #ffffff;
+ text-decoration: none;
+}
+
+a.footer_link:hover {
+color: #d9e23c;
+text-decoration: none;
+background-color: transparent;
+}
+
+a:hover {
+color: #CCCCCC;
+background-color: #333333;
+text-decoration: none;
+}
+a:active {
+color: #333333;
+}
+
 
