@@ -1,0 +1,31 @@
+<% @page_title = "Create Nickoo" %>
+<div class="link_new">
+  <h2>Create A Nickoo</h2>
+	<br>
+  <%= form_for @link do |f| %>
+  
+    <table summary="Link form fields">
+      <tr>
+        <th>Nickoo Name</th>
+        <td><%= f.text_field(:nick,:size => 20) %></td>
+      </tr>
+	   <tr>
+        <th>URL to forward to</th>
+        <td><%= f.text_field(:url,:size => 20) %></td>
+      </tr>
+	  <tr>
+        <th>Password</th>
+        <td><%= f.text_field(:password,:size => 20) %></td>
+      
+    </table>
+    <br>
+    <div class="form-buttons">
+	<p><button type="submit" class="btn"><span><span><b>&nbsp;</b><u>Create Nickoo</u></span></span></button>
+	&nbsp;
+	<button method="post" action="/hello/index" class="btn"><span><span><b>&nbsp;</b><u>Cancel</u></span></span></button>
+     
+    </div>
+    
+  <% end %>
+
+</div>

@@ -1,0 +1,22 @@
+
+
+<div id="home">
+	
+	<div class="search_form">
+	<%= form_tag({:action => 'search'}, :method => "get") do %>
+	 	  <%= text_field_tag :q, nil , :class => 'search_form'  %> <br>
+	  <br>
+	<p><button type="submit" class="btn"><span><span><b>&nbsp;</b><u>GO</u></span></span></button>
+
+	
+	<% end %>
+	</div>
+
+	<div class="main_new_link">
+		Want your name in the web too?<br>
+		Grab it now! It only takes 8 seconds.<br>
+		<%= link_to("Create a Nickoo", new_link_path, :class => 'back-link') %>
+
+	</div>
+
+</div>
